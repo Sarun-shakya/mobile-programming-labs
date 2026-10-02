@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/lab_title"
         android:textAllCaps="true"
-        android:textColor="@color/accent_teal"
+        android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +50,22 @@
         Interactive Material Button
         Demonstrates event handling preparation in Lab 1.
     -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWelcome"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="108dp"
+        android:text="@string/btn_start_lab"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purple"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGetStarted"
         android:layout_width="0dp"
@@ -83,21 +99,25 @@
             android:id="@+id/imgAppLogo"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginBottom="16dp"
             android:contentDescription="@string/app_name"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/ic_launcher"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="144dp"
+            tools:ignore="MissingConstraints" />
 
         <!-- Main Welcome Heading -->
         <TextView
             android:id="@+id/tvWelcomeMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:gravity="center"
             android:text="@string/welcome_message"
             android:textColor="@color/primary_green_dark"
             android:textSize="22sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="90dp"
+            tools:ignore="MissingConstraints" />
 
         <!-- Subtitle Description -->
         <TextView
@@ -122,5 +142,6 @@
             android:textStyle="italic" />
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
